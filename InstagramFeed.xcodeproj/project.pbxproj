@@ -14,6 +14,9 @@
 		CD9869832020C36000403E62 /* ExploreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9869822020C36000403E62 /* ExploreCollectionViewController.swift */; };
 		CD9869852020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9869842020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift */; };
 		CD9869882021ED6800403E62 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9869872021ED6700403E62 /* example.png */; };
+		CD98698E2021EF7900403E62 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98698D2021EF7900403E62 /* FeedTableViewController.swift */; };
+		CD9869932021F57700403E62 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9869912021F57700403E62 /* HeaderTableViewCell.swift */; };
+		CD9869942021F57700403E62 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9869922021F57700403E62 /* HeaderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		CD9869822020C36000403E62 /* ExploreCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewController.swift; sourceTree = "<group>"; };
 		CD9869842020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD9869872021ED6700403E62 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		CD98698D2021EF7900403E62 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		CD9869912021F57700403E62 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		CD9869922021F57700403E62 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,8 @@
 		CD9869812020C32C00403E62 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CD9869822020C36000403E62 /* ExploreCollectionViewController.swift */,
-				CD9869842020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift */,
+				CD98698C2021EF4D00403E62 /* Explore */,
+				CD98698B2021EF4500403E62 /* Feed */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -84,6 +90,25 @@
 				CD9869872021ED6700403E62 /* example.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		CD98698B2021EF4500403E62 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				CD98698D2021EF7900403E62 /* FeedTableViewController.swift */,
+				CD9869912021F57700403E62 /* HeaderTableViewCell.swift */,
+				CD9869922021F57700403E62 /* HeaderTableViewCell.xib */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		CD98698C2021EF4D00403E62 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				CD9869822020C36000403E62 /* ExploreCollectionViewController.swift */,
+				CD9869842020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift */,
+			);
+			path = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +173,7 @@
 				CD98697A2020BC1400403E62 /* LaunchScreen.storyboard in Resources */,
 				CD9869772020BC1400403E62 /* Assets.xcassets in Resources */,
 				CD9869882021ED6800403E62 /* example.png in Resources */,
+				CD9869942021F57700403E62 /* HeaderTableViewCell.xib in Resources */,
 				CD9869752020BC1400403E62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,8 +186,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD9869702020BC1300403E62 /* AppDelegate.swift in Sources */,
+				CD9869932021F57700403E62 /* HeaderTableViewCell.swift in Sources */,
 				CD9869832020C36000403E62 /* ExploreCollectionViewController.swift in Sources */,
 				CD9869852020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift in Sources */,
+				CD98698E2021EF7900403E62 /* FeedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
