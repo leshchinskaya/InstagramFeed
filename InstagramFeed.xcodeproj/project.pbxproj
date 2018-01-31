@@ -17,6 +17,8 @@
 		CD98698E2021EF7900403E62 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98698D2021EF7900403E62 /* FeedTableViewController.swift */; };
 		CD9869932021F57700403E62 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9869912021F57700403E62 /* HeaderTableViewCell.swift */; };
 		CD9869942021F57700403E62 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9869922021F57700403E62 /* HeaderTableViewCell.xib */; };
+		CD9869962022001700403E62 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9869952022001700403E62 /* PhotoTableViewCell.swift */; };
+		CD9869982022004200403E62 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9869972022004200403E62 /* CommentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		CD98698D2021EF7900403E62 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		CD9869912021F57700403E62 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		CD9869922021F57700403E62 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		CD9869952022001700403E62 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		CD9869972022004200403E62 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				CD98698D2021EF7900403E62 /* FeedTableViewController.swift */,
 				CD9869912021F57700403E62 /* HeaderTableViewCell.swift */,
 				CD9869922021F57700403E62 /* HeaderTableViewCell.xib */,
+				CD9869952022001700403E62 /* PhotoTableViewCell.swift */,
+				CD9869972022004200403E62 /* CommentTableViewCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -187,7 +193,9 @@
 			files = (
 				CD9869702020BC1300403E62 /* AppDelegate.swift in Sources */,
 				CD9869932021F57700403E62 /* HeaderTableViewCell.swift in Sources */,
+				CD9869962022001700403E62 /* PhotoTableViewCell.swift in Sources */,
 				CD9869832020C36000403E62 /* ExploreCollectionViewController.swift in Sources */,
+				CD9869982022004200403E62 /* CommentTableViewCell.swift in Sources */,
 				CD9869852020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift in Sources */,
 				CD98698E2021EF7900403E62 /* FeedTableViewController.swift in Sources */,
 			);
