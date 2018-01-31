@@ -68,24 +68,14 @@
 		CD98696E2020BC1300403E62 /* InstagramFeed */ = {
 			isa = PBXGroup;
 			children = (
-				CD9869862021ED6700403E62 /* Images */,
-				CD9869812020C32C00403E62 /* Controller */,
 				CD98696F2020BC1300403E62 /* AppDelegate.swift */,
-				CD9869732020BC1400403E62 /* Main.storyboard */,
-				CD9869762020BC1400403E62 /* Assets.xcassets */,
-				CD9869782020BC1400403E62 /* LaunchScreen.storyboard */,
-				CD98697B2020BC1400403E62 /* Info.plist */,
-			);
-			path = InstagramFeed;
-			sourceTree = "<group>";
-		};
-		CD9869812020C32C00403E62 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
 				CD98698C2021EF4D00403E62 /* Explore */,
 				CD98698B2021EF4500403E62 /* Feed */,
+				CD9869862021ED6700403E62 /* Images */,
+				CD9869732020BC1400403E62 /* Main.storyboard */,
+				CD98699D2022085300403E62 /* Supporting Files */,
 			);
-			path = Controller;
+			path = InstagramFeed;
 			sourceTree = "<group>";
 		};
 		CD9869862021ED6700403E62 /* Images */ = {
@@ -99,11 +89,8 @@
 		CD98698B2021EF4500403E62 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				CD98698D2021EF7900403E62 /* FeedTableViewController.swift */,
-				CD9869912021F57700403E62 /* HeaderTableViewCell.swift */,
-				CD9869922021F57700403E62 /* HeaderTableViewCell.xib */,
-				CD9869952022001700403E62 /* PhotoTableViewCell.swift */,
-				CD9869972022004200403E62 /* CommentTableViewCell.swift */,
+				CD9869992022079C00403E62 /* Feed View */,
+				CD98699C202207EB00403E62 /* Feed Controller */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -111,10 +98,55 @@
 		CD98698C2021EF4D00403E62 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				CD9869822020C36000403E62 /* ExploreCollectionViewController.swift */,
-				CD9869842020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift */,
+				CD98699A202207A700403E62 /* Explore View */,
+				CD98699B202207DC00403E62 /* Explore Controller */,
 			);
 			path = Explore;
+			sourceTree = "<group>";
+		};
+		CD9869992022079C00403E62 /* Feed View */ = {
+			isa = PBXGroup;
+			children = (
+				CD9869972022004200403E62 /* CommentTableViewCell.swift */,
+				CD9869912021F57700403E62 /* HeaderTableViewCell.swift */,
+				CD9869922021F57700403E62 /* HeaderTableViewCell.xib */,
+				CD9869952022001700403E62 /* PhotoTableViewCell.swift */,
+			);
+			path = "Feed View";
+			sourceTree = "<group>";
+		};
+		CD98699A202207A700403E62 /* Explore View */ = {
+			isa = PBXGroup;
+			children = (
+				CD9869842020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift */,
+			);
+			path = "Explore View";
+			sourceTree = "<group>";
+		};
+		CD98699B202207DC00403E62 /* Explore Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD9869822020C36000403E62 /* ExploreCollectionViewController.swift */,
+			);
+			path = "Explore Controller";
+			sourceTree = "<group>";
+		};
+		CD98699C202207EB00403E62 /* Feed Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD98698D2021EF7900403E62 /* FeedTableViewController.swift */,
+			);
+			path = "Feed Controller";
+			sourceTree = "<group>";
+		};
+		CD98699D2022085300403E62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD9869762020BC1400403E62 /* Assets.xcassets */,
+				CD9869782020BC1400403E62 /* LaunchScreen.storyboard */,
+				CD98697B2020BC1400403E62 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
