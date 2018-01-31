@@ -34,34 +34,34 @@
             </objects>
             <point key="canvasLocation" x="-346" y="54"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Explore Collection View Controller-->
         <scene sceneID="SSS-zT-KsS">
             <objects>
-                <collectionViewController id="NYl-MY-g9k" sceneMemberID="viewController">
+                <collectionViewController id="NYl-MY-g9k" customClass="ExploreCollectionViewController" customModule="InstagramFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="4Lp-DY-Lks">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="8" minimumInteritemSpacing="8" id="3Wa-6W-V6E">
-                            <size key="itemSize" width="200" height="200"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="3Wa-6W-V6E">
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="V24-XP-dQz">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExplorePhotoCell" id="V24-XP-dQz" customClass="ExplorePhotoCollectionViewCell" customModule="InstagramFeed" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqR-2F-mls">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likes😍" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjL-O4-f3o">
-                                            <rect key="frame" x="8" y="156.5" width="184" height="27.5"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                            <rect key="frame" x="8" y="67.5" width="84" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -76,6 +76,9 @@
                                     <constraint firstItem="OqR-2F-mls" firstAttribute="top" secondItem="V24-XP-dQz" secondAttribute="top" id="eA8-pz-5ip"/>
                                     <constraint firstItem="mjL-O4-f3o" firstAttribute="leading" secondItem="V24-XP-dQz" secondAttribute="leadingMargin" id="tem-rU-mmk"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="OqR-2F-mls" id="F6i-T7-fMO"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -86,6 +89,11 @@
                     <navigationItem key="navigationItem" id="PPY-nL-GlP"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MY-7w-UUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" id="Q2y-pt-pez">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
             </objects>
             <point key="canvasLocation" x="1828" y="-327.88605697151428"/>
         </scene>
