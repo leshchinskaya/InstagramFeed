@@ -12,4 +12,12 @@ class ExplorePhotoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var likesOfCount: UILabel!
+    
+    var photo: AnyObject! {
+        didSet {
+            InstagramData.imageForPhoto(photoDictionary: photo, size: "thumbnail") { (image) -> Void in
+                self.imageView.image = image
+            }
+        }
+    }
 }
