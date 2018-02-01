@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD550E482023164400BCC429 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD550E472023164400BCC429 /* Constant.swift */; };
+		CD550E4A202316D500BCC429 /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD550E49202316D500BCC429 /* InstagramLoginViewController.swift */; };
 		CD9869702020BC1300403E62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98696F2020BC1300403E62 /* AppDelegate.swift */; };
 		CD9869752020BC1400403E62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9869732020BC1400403E62 /* Main.storyboard */; };
 		CD9869772020BC1400403E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9869762020BC1400403E62 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD550E472023164400BCC429 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CD550E49202316D500BCC429 /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
 		CD98696C2020BC1300403E62 /* InstagramFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD98696F2020BC1300403E62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD9869742020BC1400403E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				CD9869862021ED6700403E62 /* Images */,
 				CD9869732020BC1400403E62 /* Main.storyboard */,
 				CD98699D2022085300403E62 /* Supporting Files */,
+				CD550E472023164400BCC429 /* Constant.swift */,
+				CD550E49202316D500BCC429 /* InstagramLoginViewController.swift */,
 			);
 			path = InstagramFeed;
 			sourceTree = "<group>";
@@ -226,8 +232,10 @@
 				CD9869702020BC1300403E62 /* AppDelegate.swift in Sources */,
 				CD9869932021F57700403E62 /* HeaderTableViewCell.swift in Sources */,
 				CD9869962022001700403E62 /* PhotoTableViewCell.swift in Sources */,
+				CD550E482023164400BCC429 /* Constant.swift in Sources */,
 				CD9869832020C36000403E62 /* ExploreCollectionViewController.swift in Sources */,
 				CD9869982022004200403E62 /* CommentTableViewCell.swift in Sources */,
+				CD550E4A202316D500BCC429 /* InstagramLoginViewController.swift in Sources */,
 				CD9869852020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift in Sources */,
 				CD98698E2021EF7900403E62 /* FeedTableViewController.swift in Sources */,
 			);
@@ -368,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77PLT8T8S2;
-				INFOPLIST_FILE = InstagramFeed/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InstagramFeed/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = m.InstagramFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,7 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77PLT8T8S2;
-				INFOPLIST_FILE = InstagramFeed/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InstagramFeed/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = m.InstagramFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";

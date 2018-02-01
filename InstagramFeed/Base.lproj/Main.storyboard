@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ihK-LB-daA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yLd-B3-HtW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -16,6 +17,47 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Instagram Login View Controller-->
+        <scene sceneID="sXF-4A-Ws0">
+            <objects>
+                <viewController id="yLd-B3-HtW" customClass="InstagramLoginViewController" customModule="InstagramFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jnG-lk-hJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ys-SD-I0o">
+                                <rect key="frame" x="8" y="69" width="359" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6ys-SD-I0o" secondAttribute="height" multiplier="359:598" id="YtN-Mz-EQN"/>
+                                    <constraint firstAttribute="height" constant="598" id="gKF-dF-y6a"/>
+                                    <constraint firstAttribute="width" constant="359" id="pMg-c7-XW7"/>
+                                </constraints>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vB3-DV-9tM">
+                                <rect key="frame" x="177" y="20" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ys-SD-I0o" firstAttribute="leading" secondItem="Dod-hS-NZg" secondAttribute="leading" constant="8" id="DUh-yE-HjX"/>
+                            <constraint firstItem="Dod-hS-NZg" firstAttribute="trailing" secondItem="6ys-SD-I0o" secondAttribute="trailing" constant="8" id="S1m-3R-aqd"/>
+                            <constraint firstItem="6ys-SD-I0o" firstAttribute="top" secondItem="vB3-DV-9tM" secondAttribute="bottom" constant="29" id="iNU-JU-U7b"/>
+                            <constraint firstItem="vB3-DV-9tM" firstAttribute="top" secondItem="Dod-hS-NZg" secondAttribute="top" id="jFr-IZ-1dr"/>
+                            <constraint firstItem="6ys-SD-I0o" firstAttribute="centerX" secondItem="vB3-DV-9tM" secondAttribute="centerX" id="nwE-Qf-QyA"/>
+                            <constraint firstItem="6ys-SD-I0o" firstAttribute="bottom" secondItem="Dod-hS-NZg" secondAttribute="bottom" id="qL4-cS-onq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dod-hS-NZg"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginIndicator" destination="vB3-DV-9tM" id="sQg-7U-HXP"/>
+                        <outlet property="loginWebView" destination="6ys-SD-I0o" id="eIJ-MI-jkz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k44-jt-tUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346.39999999999998" y="-658.02098950524737"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="svo-DA-BfA">
             <objects>

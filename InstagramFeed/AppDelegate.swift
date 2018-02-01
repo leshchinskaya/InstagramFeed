@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import SimpleAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         UITabBar.appearance().tintColor = UIColor.white
+        
+        //let authDictionary = ["client_id" : "3e1a01f8f9e44f758d83c0392295f7e0",
+        //                      SimpleAuthRedirectURIKey : "http://vk.com"]
         
         return true
     }
