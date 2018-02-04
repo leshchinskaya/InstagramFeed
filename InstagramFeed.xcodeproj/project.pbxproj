@@ -11,6 +11,7 @@
 		CD2D81262027356500806884 /* DetailPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D81252027356500806884 /* DetailPhotoViewController.swift */; };
 		CD2D8128202739D500806884 /* PresentDetailTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D8127202739D500806884 /* PresentDetailTransition.swift */; };
 		CD2D812A20273A2E00806884 /* DismissDetailTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D812920273A2E00806884 /* DismissDetailTransition.swift */; };
+		CD2D812D2027630400806884 /* InstagramAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D812C2027630400806884 /* InstagramAPI.swift */; };
 		CD550E482023164400BCC429 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD550E472023164400BCC429 /* Constant.swift */; };
 		CD550E4A202316D500BCC429 /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD550E49202316D500BCC429 /* InstagramLoginViewController.swift */; };
 		CD550E4F20231F0B00BCC429 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = CD550E4C20231F0A00BCC429 /* feed.png */; };
@@ -38,6 +39,7 @@
 		CD2D81252027356500806884 /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
 		CD2D8127202739D500806884 /* PresentDetailTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDetailTransition.swift; sourceTree = "<group>"; };
 		CD2D812920273A2E00806884 /* DismissDetailTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissDetailTransition.swift; sourceTree = "<group>"; };
+		CD2D812C2027630400806884 /* InstagramAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramAPI.swift; sourceTree = "<group>"; };
 		CD550E472023164400BCC429 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CD550E49202316D500BCC429 /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
 		CD550E4C20231F0A00BCC429 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
@@ -72,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD2D812B202762E300806884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDEE2E7C2023B3A900E534F8 /* InstagramData.swift */,
+				CD2D812C2027630400806884 /* InstagramAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CD550E4B202318D300BCC429 /* Instagram Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +113,7 @@
 		CD98696E2020BC1300403E62 /* InstagramFeed */ = {
 			isa = PBXGroup;
 			children = (
-				CDEE2E7E2023B3B800E534F8 /* Model */,
+				CD2D812B202762E300806884 /* Model */,
 				CDEE2E802023B3D900E534F8 /* Controller */,
 				CDEE2E7F2023B3C700E534F8 /* View */,
 				CD98696F2020BC1300403E62 /* AppDelegate.swift */,
@@ -170,14 +181,6 @@
 				CD98697B2020BC1400403E62 /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CDEE2E7E2023B3B800E534F8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CDEE2E7C2023B3A900E534F8 /* InstagramData.swift */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		CDEE2E7F2023B3C700E534F8 /* View */ = {
@@ -314,11 +317,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-InstagramFeed/Pods-InstagramFeed-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
 				"${BUILT_PRODUCTS_DIR}/SAMCache/SAMCache.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -355,6 +366,7 @@
 				CD9869962022001700403E62 /* PhotoTableViewCell.swift in Sources */,
 				CD550E482023164400BCC429 /* Constant.swift in Sources */,
 				CD2D81262027356500806884 /* DetailPhotoViewController.swift in Sources */,
+				CD2D812D2027630400806884 /* InstagramAPI.swift in Sources */,
 				CD9869832020C36000403E62 /* ExploreCollectionViewController.swift in Sources */,
 				CD9869982022004200403E62 /* CommentTableViewCell.swift in Sources */,
 				CDEE2E7D2023B3A900E534F8 /* InstagramData.swift in Sources */,

@@ -7,5 +7,9 @@ target 'InstagramFeed' do
 
   # Pods for InstagramFeed
   pod ‘SAMCache’
-
+  pod ‘Alamofire’, ‘~> 4.6’
+  pod ’SwiftyJSON’
+  pod ’DateTools’
+  pod ’AFNetworking’
+  
 end
