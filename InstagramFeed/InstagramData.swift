@@ -20,6 +20,7 @@ class InstagramData {
             completion(image)
         } else {
         
+            //print(size)
             let urlString = photoDictionary.value(forKeyPath: "images.\(size).url") as! String
             let url = URL(string: urlString)
         

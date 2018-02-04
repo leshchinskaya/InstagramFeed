@@ -114,9 +114,21 @@ class ExploreCollectionViewController: UICollectionViewController {
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let photo = self.photoDictionaries[indexPath.row] as! NSDictionary
+        
+        let viewController = DetailPhotoViewController()
+        viewController.modalPresentationStyle = UIModalPresentationStyle.custom
+        
+        viewController.transitioningDelegate = self
+        
+        viewController.photo = photo
+        
+        self.present(viewController, animated: true, completion: nil)
+    }
 }
 
-// MARK: UISearchBarDelegate
+// MARK: - UISearchBarDelegate
 extension ExploreCollectionViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if !searchBar.text!.isEmpty {
@@ -125,3 +137,16 @@ extension ExploreCollectionViewController: UISearchBarDelegate {
         }
     }
 }
+
+
+// MARK: - UIViewControllerTransitioningDelegate
+extension ExploreCollectionViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return PresentDetailTransition()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissDetailTransition()
+    }
+}
+
