@@ -7,27 +7,38 @@
 //
 
 import UIKit
+import SAMCache
 
 class InstagramData {
     
     static func imageForPhoto (photoDictionary: AnyObject, size: String, completion: @escaping (_ image: UIImage) ->  Void) {
         
-        let urlString = photoDictionary.value(forKeyPath: "images.\(size).url") as! String
-        let url = URL(string: urlString)
+        let photoID = photoDictionary["id"] as! String
+        let key = "\(photoID)-\(size)"
         
-        let session = URLSession.shared
-        let request = URLRequest(url: url!)
-        let task = session.downloadTask(with: request) { (localFile, response, error) in
-            if error == nil {
-                let data = try! Data(contentsOf: localFile!)
-                let image = UIImage (data: data)
+        if let image = SAMCache.shared().image(forKey: key) {
+            completion(image)
+        } else {
+        
+            let urlString = photoDictionary.value(forKeyPath: "images.\(size).url") as! String
+            let url = URL(string: urlString)
+        
+            let session = URLSession.shared
+            let request = URLRequest(url: url!)
+            let task = session.downloadTask(with: request) { (localFile, response, error) in
+                if error == nil {
+                    let data = try! Data(contentsOf: localFile!)
+                    let image = UIImage (data: data)
                 
-                DispatchQueue.main.async {
-                    completion(image!)
+                    SAMCache.shared().setImage(image, forKey: key)
+                    
+                    DispatchQueue.main.async {
+                        completion(image!)
+                    }
                 }
             }
+            task.resume()
         }
-        task.resume()
     }
     
 }
