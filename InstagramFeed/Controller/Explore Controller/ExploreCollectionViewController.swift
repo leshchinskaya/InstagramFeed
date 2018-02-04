@@ -30,6 +30,11 @@ class ExploreCollectionViewController: UICollectionViewController {
         accessToken = "4625589.3e1a01f.47608692b7054008bba207b91370703a"
         
         print(accessToken)
+        
+        //configure the search bar
+        self.navigationItem.titleView = searchBar
+        self.searchBar.delegate = self
+        
         //configure the collection view
         let width = (collectionView!.frame.size.width - leftAndRightPaddings) / numberOfItemsPerRow
         
@@ -109,4 +114,14 @@ class ExploreCollectionViewController: UICollectionViewController {
         return cell
     }
 
+}
+
+// MARK: UISearchBarDelegate
+extension ExploreCollectionViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if !searchBar.text!.isEmpty {
+            searchBar.resignFirstResponder()
+            fetchPhotos()
+        }
+    }
 }
