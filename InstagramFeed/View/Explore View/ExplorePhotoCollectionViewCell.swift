@@ -20,4 +20,10 @@ class ExplorePhotoCollectionViewCell: UICollectionViewCell {
             }
         }
     }
+    
+    var likes: String! {
+        didSet {
+            self.likesOfCount.text = "😍 " + likes + " likes"
+            }
+        }
 }

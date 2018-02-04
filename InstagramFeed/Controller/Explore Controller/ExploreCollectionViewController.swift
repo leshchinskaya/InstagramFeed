@@ -14,6 +14,7 @@ class ExploreCollectionViewController: UICollectionViewController {
     
     var accessToken: String!
     private var photoDictionaries = [AnyObject]()
+    var data: [[String: String?]] = []
     
     private let leftAndRightPaddings: CGFloat = 32.0
     private let numberOfItemsPerRow: CGFloat = 3.0
@@ -78,6 +79,14 @@ class ExploreCollectionViewController: UICollectionViewController {
                     self.photoDictionaries = responseDictionary["data"] as! [AnyObject]
                     print(self.photoDictionaries)
                     
+                    for result in self.photoDictionaries {
+                        let likes = result.value(forKeyPath: "likes.count") as! Int
+                        let comment = result.value(forKeyPath: "comments.count") as! Int
+                        let obj = ["comments": String(comment), "likes": String(likes)]
+                        
+                        self.data.append(obj)
+                    }
+                    
                 } catch let error {
                     print (error)
                 }
@@ -88,7 +97,6 @@ class ExploreCollectionViewController: UICollectionViewController {
         }
         task.resume()
     }
-    
     
     // MARK: UICollectionViewDataSource
 
@@ -110,7 +118,7 @@ class ExploreCollectionViewController: UICollectionViewController {
         //cell.imageView.image = UIImage (named: "example")
         let photoDictionary = photoDictionaries[indexPath.item]
         cell.photo = photoDictionary
-        
+        cell.likes = data[indexPath.row]["likes"] as! String
         return cell
     }
 
