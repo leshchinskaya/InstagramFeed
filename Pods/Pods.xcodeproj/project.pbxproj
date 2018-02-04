@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36F81880AF3721697B708A111623B46B /* SAMCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 30BC0990AF077E352D04B97CC07BD21E /* SAMCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39C5E96812D277C689EEDCEEAEA66217 /* SAMCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BED8790C52C24330F152EEAF27D51EE0 /* SAMCache-dummy.m */; };
+		4834DACB4F212D707BFAACA6B1E6D5C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		57A9A62157BDA5E3BEB6500F8D05979C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		734A0E85BC7E3A4CCA040F9DA146D379 /* Pods-InstagramFeed-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A84C9497490B1A8C3C8436D6E6322FFC /* Pods-InstagramFeed-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		817C1A4553C4A991F3825FD2DDD861EE /* SAMCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DC9B3B6ADB4AF22B5745138F8E2AAF /* SAMCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FEE7FEC03CAD65C0C342EEF6738E472 /* SAMCache+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 824BEC8BF423AC47D061AEF7F11E1D9F /* SAMCache+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EB09C8DCF964CA9C7CACB0260B19346 /* Pods-InstagramFeed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A16BD9DCB3C8C33DE6446B46722C9495 /* Pods-InstagramFeed-dummy.m */; };
+		B18D6CC8D6D7FB090DAF0875E6FCF624 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		B40E408B649064536D3F3918D2384B62 /* SAMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D06D2C3D712E1817A7C2883D5AE6E8 /* SAMCache.m */; };
+		D9EFE80C1E3B6BF9630A7560122F8C48 /* SAMCache+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B35B249019DB5B10CAC41A6513DF756 /* SAMCache+Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F71BCE0317277664DB750148DB599585 /* SAMCache+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C0025788E70A7808EBCEB8620199A7 /* SAMCache+Image.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7286977B7A0996C2B01613E20EB738ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF93FCFE70F1B88CB1B417E34C6FAE94;
+			remoteInfo = SAMCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		037E0D9F1514404129585E0AEC5A3523 /* Pods_InstagramFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InstagramFeed.framework; path = "Pods-InstagramFeed.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC7CB6B1B72838446862C4C6B23C59C /* Pods-InstagramFeed.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-InstagramFeed.modulemap"; sourceTree = "<group>"; };
+		27DC9B3B6ADB4AF22B5745138F8E2AAF /* SAMCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMCache-umbrella.h"; sourceTree = "<group>"; };
+		30BC0990AF077E352D04B97CC07BD21E /* SAMCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMCache.h; path = SAMCache/SAMCache.h; sourceTree = "<group>"; };
+		3D7779CA0A89F321FBFA988BF2188BE9 /* SAMCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SAMCache.framework; path = SAMCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEA54380B3A0DB3EA080DF431F6D4D5 /* Pods-InstagramFeed-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InstagramFeed-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B35B249019DB5B10CAC41A6513DF756 /* SAMCache+Image.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SAMCache+Image.h"; path = "SAMCache/SAMCache+Image.h"; sourceTree = "<group>"; };
+		4FEA8FF4F40E90BF04CCA67884295713 /* SAMCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAMCache.xcconfig; sourceTree = "<group>"; };
+		50D06D2C3D712E1817A7C2883D5AE6E8 /* SAMCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMCache.m; path = SAMCache/SAMCache.m; sourceTree = "<group>"; };
+		58F6ECC6F13DB87B9F84FCCF909564BF /* Pods-InstagramFeed-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InstagramFeed-frameworks.sh"; sourceTree = "<group>"; };
+		5A6300545174BBAFEE8B78596927DF90 /* Pods-InstagramFeed-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InstagramFeed-resources.sh"; sourceTree = "<group>"; };
+		61C0025788E70A7808EBCEB8620199A7 /* SAMCache+Image.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SAMCache+Image.m"; path = "SAMCache/SAMCache+Image.m"; sourceTree = "<group>"; };
+		7AFB31F02439C77CF5752C6308B44CA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		824BEC8BF423AC47D061AEF7F11E1D9F /* SAMCache+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SAMCache+Private.h"; path = "SAMCache/SAMCache+Private.h"; sourceTree = "<group>"; };
+		91EA6198DAF848F4ACD456C8085F90EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A16BD9DCB3C8C33DE6446B46722C9495 /* Pods-InstagramFeed-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InstagramFeed-dummy.m"; sourceTree = "<group>"; };
+		A84C9497490B1A8C3C8436D6E6322FFC /* Pods-InstagramFeed-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InstagramFeed-umbrella.h"; sourceTree = "<group>"; };
+		B4B8C8B28585525ED77C4F86208EE1AA /* SAMCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SAMCache.modulemap; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B774AE42DEABA1AD684F40D61E011667 /* SAMCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMCache-prefix.pch"; sourceTree = "<group>"; };
+		BED8790C52C24330F152EEAF27D51EE0 /* SAMCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAMCache-dummy.m"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E3BF92C56B58CDAF6F8DA51CA0611D77 /* Pods-InstagramFeed-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstagramFeed-acknowledgements.plist"; sourceTree = "<group>"; };
+		F54453CBBA2CCD1D1276692FDD8FEA62 /* Pods-InstagramFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstagramFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		FC408BD86EB79D4DC884CA45AE016E44 /* Pods-InstagramFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstagramFeed.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1300C20EEC4A8762B29989C3F8607093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4834DACB4F212D707BFAACA6B1E6D5C7 /* Foundation.framework in Frameworks */,
+				57A9A62157BDA5E3BEB6500F8D05979C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EEBB3CFB2772BFD7CFDE63C104FAA34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18D6CC8D6D7FB090DAF0875E6FCF624 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2520D7AA17513178E7EE3C39C3482630 /* SAMCache */ = {
+			isa = PBXGroup;
+			children = (
+				30BC0990AF077E352D04B97CC07BD21E /* SAMCache.h */,
+				50D06D2C3D712E1817A7C2883D5AE6E8 /* SAMCache.m */,
+				4B35B249019DB5B10CAC41A6513DF756 /* SAMCache+Image.h */,
+				61C0025788E70A7808EBCEB8620199A7 /* SAMCache+Image.m */,
+				824BEC8BF423AC47D061AEF7F11E1D9F /* SAMCache+Private.h */,
+				38F1D8C683A1782965E65E2523B48B9E /* Support Files */,
+			);
+			name = SAMCache;
+			path = SAMCache;
+			sourceTree = "<group>";
+		};
+		38F1D8C683A1782965E65E2523B48B9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91EA6198DAF848F4ACD456C8085F90EC /* Info.plist */,
+				B4B8C8B28585525ED77C4F86208EE1AA /* SAMCache.modulemap */,
+				4FEA8FF4F40E90BF04CCA67884295713 /* SAMCache.xcconfig */,
+				BED8790C52C24330F152EEAF27D51EE0 /* SAMCache-dummy.m */,
+				B774AE42DEABA1AD684F40D61E011667 /* SAMCache-prefix.pch */,
+				27DC9B3B6ADB4AF22B5745138F8E2AAF /* SAMCache-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SAMCache";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6549BB8D992C21BD90BA8A848444A98D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8F66DCF984C41BF5BA15F574610463D /* Pods-InstagramFeed */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				826CFBBA3530C437E4FA213DE0140058 /* Pods */,
+				A79B5C849AA8276C5682DB8D7DA75383 /* Products */,
+				6549BB8D992C21BD90BA8A848444A98D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		826CFBBA3530C437E4FA213DE0140058 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2520D7AA17513178E7EE3C39C3482630 /* SAMCache */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A79B5C849AA8276C5682DB8D7DA75383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				037E0D9F1514404129585E0AEC5A3523 /* Pods_InstagramFeed.framework */,
+				3D7779CA0A89F321FBFA988BF2188BE9 /* SAMCache.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8F66DCF984C41BF5BA15F574610463D /* Pods-InstagramFeed */ = {
+			isa = PBXGroup;
+			children = (
+				7AFB31F02439C77CF5752C6308B44CA1 /* Info.plist */,
+				1AC7CB6B1B72838446862C4C6B23C59C /* Pods-InstagramFeed.modulemap */,
+				4AEA54380B3A0DB3EA080DF431F6D4D5 /* Pods-InstagramFeed-acknowledgements.markdown */,
+				E3BF92C56B58CDAF6F8DA51CA0611D77 /* Pods-InstagramFeed-acknowledgements.plist */,
+				A16BD9DCB3C8C33DE6446B46722C9495 /* Pods-InstagramFeed-dummy.m */,
+				58F6ECC6F13DB87B9F84FCCF909564BF /* Pods-InstagramFeed-frameworks.sh */,
+				5A6300545174BBAFEE8B78596927DF90 /* Pods-InstagramFeed-resources.sh */,
+				A84C9497490B1A8C3C8436D6E6322FFC /* Pods-InstagramFeed-umbrella.h */,
+				F54453CBBA2CCD1D1276692FDD8FEA62 /* Pods-InstagramFeed.debug.xcconfig */,
+				FC408BD86EB79D4DC884CA45AE016E44 /* Pods-InstagramFeed.release.xcconfig */,
+			);
+			name = "Pods-InstagramFeed";
+			path = "Target Support Files/Pods-InstagramFeed";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1EDF79ABD3CCAD152B9683BD0CE3DFC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EFE80C1E3B6BF9630A7560122F8C48 /* SAMCache+Image.h in Headers */,
+				8FEE7FEC03CAD65C0C342EEF6738E472 /* SAMCache+Private.h in Headers */,
+				817C1A4553C4A991F3825FD2DDD861EE /* SAMCache-umbrella.h in Headers */,
+				36F81880AF3721697B708A111623B46B /* SAMCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38CB1C365D6AAD07B25A979F18740F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734A0E85BC7E3A4CCA040F9DA146D379 /* Pods-InstagramFeed-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EF93FCFE70F1B88CB1B417E34C6FAE94 /* SAMCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BB7A008BF3CFE2D9D4D8E81B7CFBD7 /* Build configuration list for PBXNativeTarget "SAMCache" */;
+			buildPhases = (
+				2CD606E5A834BDC691F73B9D3C84A55B /* Sources */,
+				1300C20EEC4A8762B29989C3F8607093 /* Frameworks */,
+				1EDF79ABD3CCAD152B9683BD0CE3DFC6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAMCache;
+			productName = SAMCache;
+			productReference = 3D7779CA0A89F321FBFA988BF2188BE9 /* SAMCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F80A8F3D1212CD247E4C0F2C613F4F37 /* Pods-InstagramFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA52D1EFBC4F2CDB587E5BA22CB7F757 /* Build configuration list for PBXNativeTarget "Pods-InstagramFeed" */;
+			buildPhases = (
+				D0D1839EAE0E9F80DC9F149028CAAFEB /* Sources */,
+				4EEBB3CFB2772BFD7CFDE63C104FAA34 /* Frameworks */,
+				E38CB1C365D6AAD07B25A979F18740F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F92EF6108747C29D16E599C67DE4DC4 /* PBXTargetDependency */,
+			);
+			name = "Pods-InstagramFeed";
+			productName = "Pods-InstagramFeed";
+			productReference = 037E0D9F1514404129585E0AEC5A3523 /* Pods_InstagramFeed.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A79B5C849AA8276C5682DB8D7DA75383 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F80A8F3D1212CD247E4C0F2C613F4F37 /* Pods-InstagramFeed */,
+				EF93FCFE70F1B88CB1B417E34C6FAE94 /* SAMCache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CD606E5A834BDC691F73B9D3C84A55B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F71BCE0317277664DB750148DB599585 /* SAMCache+Image.m in Sources */,
+				39C5E96812D277C689EEDCEEAEA66217 /* SAMCache-dummy.m in Sources */,
+				B40E408B649064536D3F3918D2384B62 /* SAMCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1839EAE0E9F80DC9F149028CAAFEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB09C8DCF964CA9C7CACB0260B19346 /* Pods-InstagramFeed-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F92EF6108747C29D16E599C67DE4DC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAMCache;
+			target = EF93FCFE70F1B88CB1B417E34C6FAE94 /* SAMCache */;
+			targetProxy = 7286977B7A0996C2B01613E20EB738ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AD47AC29AF54657B9EFEC32DD07F8D27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FEA8FF4F40E90BF04CCA67884295713 /* SAMCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAMCache/SAMCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAMCache/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SAMCache/SAMCache.modulemap";
+				PRODUCT_NAME = SAMCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4308E0A4E8D4A2162F3C19BF6FAD31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC408BD86EB79D4DC884CA45AE016E44 /* Pods-InstagramFeed.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstagramFeed/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstagramFeed/Pods-InstagramFeed.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_InstagramFeed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD6037E69E42008A30C150B8D2765889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FEA8FF4F40E90BF04CCA67884295713 /* SAMCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAMCache/SAMCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAMCache/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SAMCache/SAMCache.modulemap";
+				PRODUCT_NAME = SAMCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FBB6828F8A652A388857D518F1254B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54453CBBA2CCD1D1276692FDD8FEA62 /* Pods-InstagramFeed.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstagramFeed/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstagramFeed/Pods-InstagramFeed.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_InstagramFeed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BB7A008BF3CFE2D9D4D8E81B7CFBD7 /* Build configuration list for PBXNativeTarget "SAMCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD6037E69E42008A30C150B8D2765889 /* Debug */,
+				AD47AC29AF54657B9EFEC32DD07F8D27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA52D1EFBC4F2CDB587E5BA22CB7F757 /* Build configuration list for PBXNativeTarget "Pods-InstagramFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB6828F8A652A388857D518F1254B80 /* Debug */,
+				B4308E0A4E8D4A2162F3C19BF6FAD31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
