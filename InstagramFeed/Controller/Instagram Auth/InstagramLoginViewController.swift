@@ -14,11 +14,12 @@ class InstagramLoginViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var loginIndicator: UIActivityIndicatorView!
     @IBOutlet weak var loginSuccess: UILabel!
     
-    var accessToken: String!
+    var accessToken: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         loginWebView.delegate = self
         unSignedRequest()
     }
@@ -50,7 +51,10 @@ class InstagramLoginViewController: UIViewController, UIWebViewDelegate {
     func handleAuth(authToken: String)  {
         accessToken = authToken
         loginSuccess.text = "login success"
-        print("Instagram authentication token ==", authToken)
+        print("Instagram authentication token ==", accessToken)
+        
+        let tbvc = self.tabBarController  as! InstaTabController
+        tbvc.accessToken = accessToken
     }
     
     
@@ -73,15 +77,5 @@ class InstagramLoginViewController: UIViewController, UIWebViewDelegate {
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         webViewDidFinishLoad(webView)
     }
-    
-     // MARK: - Navigation
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier! == "LoginDone" {
-            if let yourVC = segue.destination as? ExploreCollectionViewController {
-                yourVC.accessToken = self.accessToken
-            }
-        }
-        
-     }
+
 }

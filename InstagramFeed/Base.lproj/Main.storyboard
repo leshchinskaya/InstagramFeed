@@ -26,11 +26,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ys-SD-I0o">
-                                <rect key="frame" x="8" y="147" width="359" height="580"/>
+                                <rect key="frame" x="8" y="147" width="359" height="471"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="6ys-SD-I0o" secondAttribute="height" multiplier="359:598" constant="10.80602006688963" id="YtN-Mz-EQN"/>
-                                    <constraint firstAttribute="height" constant="580" id="gKF-dF-y6a"/>
+                                    <constraint firstAttribute="width" secondItem="6ys-SD-I0o" secondAttribute="height" multiplier="359:598" constant="76.242474916387948" id="YtN-Mz-EQN"/>
+                                    <constraint firstAttribute="height" constant="471" id="gKF-dF-y6a"/>
                                     <constraint firstAttribute="width" constant="359" id="pMg-c7-XW7"/>
                                 </constraints>
                             </webView>
@@ -43,14 +43,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrQ-PR-j97">
-                                <rect key="frame" x="304" y="109" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="NYl-MY-g9k" kind="show" identifier="LoginDone" id="64v-m7-rSh"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -61,7 +53,8 @@
                             <constraint firstItem="vB3-DV-9tM" firstAttribute="top" secondItem="Dod-hS-NZg" secondAttribute="top" constant="16" id="jFr-IZ-1dr"/>
                             <constraint firstItem="6ys-SD-I0o" firstAttribute="centerX" secondItem="vB3-DV-9tM" secondAttribute="centerX" id="nwE-Qf-QyA"/>
                             <constraint firstItem="Dod-hS-NZg" firstAttribute="trailing" secondItem="PUG-Va-zy4" secondAttribute="trailing" constant="16" id="oMc-JI-lvJ"/>
-                            <constraint firstItem="6ys-SD-I0o" firstAttribute="bottom" secondItem="Dod-hS-NZg" secondAttribute="bottom" id="qL4-cS-onq"/>
+                            <constraint firstItem="6ys-SD-I0o" firstAttribute="bottom" secondItem="Dod-hS-NZg" secondAttribute="bottom" constant="-109" id="qL4-cS-onq"/>
+                            <constraint firstItem="PUG-Va-zy4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jnG-lk-hJJ" secondAttribute="leading" constant="20" symbolic="YES" id="y1E-PL-t1u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dod-hS-NZg"/>
                     </view>
@@ -76,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="2165.5999999999999" y="-1166.2668665667168"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Insta Tab Controller-->
         <scene sceneID="svo-DA-BfA">
             <objects>
-                <tabBarController id="ihK-LB-daA" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="ihK-LB-daA" customClass="InstaTabController" customModule="InstagramFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ys5-Km-UKa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -237,16 +230,15 @@
                                             <rect key="frame" x="56" y="14" width="130" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="X1b-vw-gEn"/>
-                                                <constraint firstAttribute="width" constant="130" id="oTD-Yz-UXS"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="oTD-Yz-UXS"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ct1-39-qMN">
-                                            <rect key="frame" x="308" y="14" width="60" height="21"/>
+                                            <rect key="frame" x="334.5" y="14" width="33.5" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="60" id="8D8-z2-veV"/>
                                                 <constraint firstAttribute="height" constant="21" id="u7Y-zl-bFr"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -260,8 +252,10 @@
                                         <constraint firstItem="Ct1-39-qMN" firstAttribute="centerY" secondItem="Isf-ye-EYI" secondAttribute="centerY" id="BzZ-03-CqP"/>
                                         <constraint firstItem="Gbf-xG-wqO" firstAttribute="centerY" secondItem="Isf-ye-EYI" secondAttribute="centerY" id="InI-Ao-k7b"/>
                                         <constraint firstAttribute="trailing" secondItem="Ct1-39-qMN" secondAttribute="trailing" constant="7" id="MVZ-YW-SsE"/>
+                                        <constraint firstItem="Ct1-39-qMN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Isf-ye-EYI" secondAttribute="leading" constant="20" symbolic="YES" id="NfI-Iz-de8"/>
                                         <constraint firstItem="Gbf-xG-wqO" firstAttribute="leading" secondItem="Isf-ye-EYI" secondAttribute="leading" constant="16" id="bcg-fj-tW9"/>
                                         <constraint firstItem="8iW-Cp-hrM" firstAttribute="leading" secondItem="Gbf-xG-wqO" secondAttribute="trailing" constant="8" id="iKD-tB-3Ra"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8iW-Cp-hrM" secondAttribute="trailing" constant="20" symbolic="YES" id="vjF-5f-dub"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -412,7 +406,4 @@
         <image name="feed.png" width="39" height="46"/>
         <image name="login.png" width="44" height="44"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="64v-m7-rSh"/>
-    </inferredMetricsTieBreakers>
 </document>

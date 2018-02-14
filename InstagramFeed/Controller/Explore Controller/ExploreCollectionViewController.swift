@@ -12,7 +12,8 @@ class ExploreCollectionViewController: UICollectionViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var accessToken: String!
+    var accessToken: String = ""
+    
     private var photoDictionaries = [AnyObject]()
     var data: [[String: String?]] = []
     
@@ -26,11 +27,13 @@ class ExploreCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
+
+        let tbvc = self.tabBarController  as! InstaTabController
+        accessToken = tbvc.accessToken
         
-        accessToken = "4625589.3e1a01f.47608692b7054008bba207b91370703a"
-        
-        print(accessToken)
+        print("access = \(accessToken)")
         
         //configure the search bar
         self.navigationItem.titleView = searchBar
@@ -45,13 +48,12 @@ class ExploreCollectionViewController: UICollectionViewController {
         fetchPhotos()
     }
     
-    
     // MARK: - Helper Methods
 
     //https://api.instagram.com/v1/tags/{tag-name}/media/recent?access_token=ACCESS-TOKEN
     func urlWithSearchText(searchText: String) -> URL {
         let escaptedSearchText = searchText.replacingOccurrences(of: " ", with: "")
-        let urlSring = "https://api.instagram.com/v1/tags/\(searchText)/media/recent?access_token=4625589.3e1a01f.47608692b7054008bba207b91370703a"
+        let urlSring = "https://api.instagram.com/v1/tags/\(searchText)/media/recent?access_token=\(accessToken)"
         
         let url = URL(string: urlSring)
         
@@ -157,4 +159,3 @@ extension ExploreCollectionViewController: UIViewControllerTransitioningDelegate
         return DismissDetailTransition()
     }
 }
-
