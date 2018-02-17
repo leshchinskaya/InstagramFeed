@@ -30,12 +30,14 @@ class FeedTableViewController: UITableViewController {
     }
     
     func updateUserInfo() {
-        InstagramAPI().fetchUserInfo(accessToken: self.accessToken, callback: { userProfile in
-            self.userID = userProfile.id
-            self.userName = userProfile.username
-            self.navigationItem.title = self.userName
-            self.profilePicture = userProfile.profilePicture
-        })
+        DispatchQueue.global(qos: .userInitiated).async {
+            InstagramAPI().fetchUserInfo(accessToken: self.accessToken, callback: { userProfile in
+                    self.userID = userProfile.id
+                    self.userName = userProfile.username
+                    self.navigationItem.title = self.userName
+                    self.profilePicture = userProfile.profilePicture
+            })
+        }
     }
     
     func updateData() {
