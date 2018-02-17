@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		595B19011367C766BAB1BAFA /* Pods_InstagramFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A379A3F545FF0F01E74408 /* Pods_InstagramFeed.framework */; };
+		CD06F2EF2038D22100CF45BD /* 1024x1024@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E02038D22100CF45BD /* 1024x1024@1x.png */; };
+		CD06F2F02038D22100CF45BD /* 20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E12038D22100CF45BD /* 20x20@1x.png */; };
+		CD06F2F12038D22100CF45BD /* 20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E22038D22100CF45BD /* 20x20@2x.png */; };
+		CD06F2F22038D22100CF45BD /* 20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E32038D22100CF45BD /* 20x20@3x.png */; };
+		CD06F2F32038D22100CF45BD /* 29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E42038D22100CF45BD /* 29x29@1x.png */; };
+		CD06F2F42038D22100CF45BD /* 29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E52038D22100CF45BD /* 29x29@2x.png */; };
+		CD06F2F52038D22100CF45BD /* 29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E62038D22100CF45BD /* 29x29@3x.png */; };
+		CD06F2F62038D22100CF45BD /* 40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E72038D22100CF45BD /* 40x40@1x.png */; };
+		CD06F2F72038D22100CF45BD /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E82038D22100CF45BD /* 40x40@2x.png */; };
+		CD06F2F82038D22100CF45BD /* 40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2E92038D22100CF45BD /* 40x40@3x.png */; };
+		CD06F2F92038D22100CF45BD /* 60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2EA2038D22100CF45BD /* 60x60@2x.png */; };
+		CD06F2FA2038D22100CF45BD /* 60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2EB2038D22100CF45BD /* 60x60@3x.png */; };
+		CD06F2FB2038D22100CF45BD /* 76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2EC2038D22100CF45BD /* 76x76@1x.png */; };
+		CD06F2FC2038D22100CF45BD /* 76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2ED2038D22100CF45BD /* 76x76@2x.png */; };
+		CD06F2FD2038D22100CF45BD /* 83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD06F2EE2038D22100CF45BD /* 83.5x83.5@2x.png */; };
 		CD2D81262027356500806884 /* DetailPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D81252027356500806884 /* DetailPhotoViewController.swift */; };
 		CD2D8128202739D500806884 /* PresentDetailTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D8127202739D500806884 /* PresentDetailTransition.swift */; };
 		CD2D812A20273A2E00806884 /* DismissDetailTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D812920273A2E00806884 /* DismissDetailTransition.swift */; };
@@ -40,6 +55,21 @@
 		075D2A5FB23F5CB79B10346F /* Pods-InstagramFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramFeed/Pods-InstagramFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		6B0B9A1F074E3E986136E4B1 /* Pods-InstagramFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramFeed/Pods-InstagramFeed.release.xcconfig"; sourceTree = "<group>"; };
 		77A379A3F545FF0F01E74408 /* Pods_InstagramFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD06F2E02038D22100CF45BD /* 1024x1024@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1024x1024@1x.png"; sourceTree = "<group>"; };
+		CD06F2E12038D22100CF45BD /* 20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20x20@1x.png"; sourceTree = "<group>"; };
+		CD06F2E22038D22100CF45BD /* 20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20x20@2x.png"; sourceTree = "<group>"; };
+		CD06F2E32038D22100CF45BD /* 20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20x20@3x.png"; sourceTree = "<group>"; };
+		CD06F2E42038D22100CF45BD /* 29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@1x.png"; sourceTree = "<group>"; };
+		CD06F2E52038D22100CF45BD /* 29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@2x.png"; sourceTree = "<group>"; };
+		CD06F2E62038D22100CF45BD /* 29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@3x.png"; sourceTree = "<group>"; };
+		CD06F2E72038D22100CF45BD /* 40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40x40@1x.png"; sourceTree = "<group>"; };
+		CD06F2E82038D22100CF45BD /* 40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40x40@2x.png"; sourceTree = "<group>"; };
+		CD06F2E92038D22100CF45BD /* 40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40x40@3x.png"; sourceTree = "<group>"; };
+		CD06F2EA2038D22100CF45BD /* 60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60x60@2x.png"; sourceTree = "<group>"; };
+		CD06F2EB2038D22100CF45BD /* 60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60x60@3x.png"; sourceTree = "<group>"; };
+		CD06F2EC2038D22100CF45BD /* 76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "76x76@1x.png"; sourceTree = "<group>"; };
+		CD06F2ED2038D22100CF45BD /* 76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "76x76@2x.png"; sourceTree = "<group>"; };
+		CD06F2EE2038D22100CF45BD /* 83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "83.5x83.5@2x.png"; sourceTree = "<group>"; };
 		CD1EA9C8203783A8007F094C /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		CD2D81252027356500806884 /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
 		CD2D8127202739D500806884 /* PresentDetailTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDetailTransition.swift; sourceTree = "<group>"; };
@@ -83,6 +113,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD06F2DF2038D22100CF45BD /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				CD06F2E02038D22100CF45BD /* 1024x1024@1x.png */,
+				CD06F2E12038D22100CF45BD /* 20x20@1x.png */,
+				CD06F2E22038D22100CF45BD /* 20x20@2x.png */,
+				CD06F2E32038D22100CF45BD /* 20x20@3x.png */,
+				CD06F2E42038D22100CF45BD /* 29x29@1x.png */,
+				CD06F2E52038D22100CF45BD /* 29x29@2x.png */,
+				CD06F2E62038D22100CF45BD /* 29x29@3x.png */,
+				CD06F2E72038D22100CF45BD /* 40x40@1x.png */,
+				CD06F2E82038D22100CF45BD /* 40x40@2x.png */,
+				CD06F2E92038D22100CF45BD /* 40x40@3x.png */,
+				CD06F2EA2038D22100CF45BD /* 60x60@2x.png */,
+				CD06F2EB2038D22100CF45BD /* 60x60@3x.png */,
+				CD06F2EC2038D22100CF45BD /* 76x76@1x.png */,
+				CD06F2ED2038D22100CF45BD /* 76x76@2x.png */,
+				CD06F2EE2038D22100CF45BD /* 83.5x83.5@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		CD2D812B202762E300806884 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,9 +182,10 @@
 				CDEE2E802023B3D900E534F8 /* Controller */,
 				CDEE2E7F2023B3C700E534F8 /* View */,
 				CD98696F2020BC1300403E62 /* AppDelegate.swift */,
+				CD1EA9C8203783A8007F094C /* Bridge.h */,
+				CD06F2DF2038D22100CF45BD /* Icons */,
 				CD9869862021ED6700403E62 /* Images */,
 				CD98699D2022085300403E62 /* Supporting Files */,
-				CD1EA9C8203783A8007F094C /* Bridge.h */,
 			);
 			path = InstagramFeed;
 			sourceTree = "<group>";
@@ -295,14 +348,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD06F2F32038D22100CF45BD /* 29x29@1x.png in Resources */,
 				CD98697A2020BC1400403E62 /* LaunchScreen.storyboard in Resources */,
 				CD9869772020BC1400403E62 /* Assets.xcassets in Resources */,
 				CD9869882021ED6800403E62 /* example.png in Resources */,
 				CD9869942021F57700403E62 /* HeaderTableViewCell.xib in Resources */,
+				CD06F2F42038D22100CF45BD /* 29x29@2x.png in Resources */,
+				CD06F2F02038D22100CF45BD /* 20x20@1x.png in Resources */,
+				CD06F2FC2038D22100CF45BD /* 76x76@2x.png in Resources */,
+				CD06F2F72038D22100CF45BD /* 40x40@2x.png in Resources */,
 				CD9869752020BC1400403E62 /* Main.storyboard in Resources */,
+				CD06F2F62038D22100CF45BD /* 40x40@1x.png in Resources */,
 				CD550E5120231F0B00BCC429 /* login.png in Resources */,
+				CD06F2F12038D22100CF45BD /* 20x20@2x.png in Resources */,
+				CD06F2F92038D22100CF45BD /* 60x60@2x.png in Resources */,
+				CD06F2FD2038D22100CF45BD /* 83.5x83.5@2x.png in Resources */,
 				CD550E4F20231F0B00BCC429 /* feed.png in Resources */,
+				CD06F2FA2038D22100CF45BD /* 60x60@3x.png in Resources */,
 				CD550E5020231F0B00BCC429 /* explore.png in Resources */,
+				CD06F2F82038D22100CF45BD /* 40x40@3x.png in Resources */,
+				CD06F2FB2038D22100CF45BD /* 76x76@1x.png in Resources */,
+				CD06F2F22038D22100CF45BD /* 20x20@3x.png in Resources */,
+				CD06F2EF2038D22100CF45BD /* 1024x1024@1x.png in Resources */,
+				CD06F2F52038D22100CF45BD /* 29x29@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +601,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77PLT8T8S2;
 				INFOPLIST_FILE = "$(SRCROOT)/InstagramFeed/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = m.InstagramFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,6 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77PLT8T8S2;
 				INFOPLIST_FILE = "$(SRCROOT)/InstagramFeed/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = m.InstagramFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
