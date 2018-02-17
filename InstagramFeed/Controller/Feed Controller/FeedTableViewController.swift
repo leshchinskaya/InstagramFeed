@@ -39,28 +39,30 @@ class FeedTableViewController: UITableViewController {
     }
     
     func updateData() {
-        InstagramAPI().fetchUserData(accessToken: self.accessToken, callback: { userProfile in
-            self.userFollowers.text = "Followers: " + String(userProfile.followers)
-            self.userFollowers.font = UIFont(name: "AvenirNext-Regular", size: 14)
+        DispatchQueue.global(qos: .userInitiated).async {
+            InstagramAPI().fetchUserData(accessToken: self.accessToken, callback: { userProfile in
+                    self.userFollowers.text = "Followers: " + String(userProfile.followers)
+                    self.userFollowers.font = UIFont(name: "AvenirNext-Regular", size: 14)
                 
-            self.userFollowing.font = UIFont(name: "AvenirNext-Regular", size: 14)
-            self.userFollowing.text = "Following: " + String(userProfile.following)
+                    self.userFollowing.font = UIFont(name: "AvenirNext-Regular", size: 14)
+                    self.userFollowing.text = "Following: " + String(userProfile.following)
                 
-            self.userPosts.font = UIFont(name: "AvenirNext-Regular", size: 14)
-            self.userPosts.text = "Posts: " + String(userProfile.posts)
+                    self.userPosts.font = UIFont(name: "AvenirNext-Regular", size: 14)
+                    self.userPosts.text = "Posts: " + String(userProfile.posts)
                 
-            if let url = NSURL(string: self.profilePicture), let data = NSData(contentsOf: url as URL), let photo = UIImage(data: data as Data) {
-                    self.userImage.image = photo
-            } else {
-                self.userImage.image = UIImage(named: "feed.png")
-            }
-        })
-            
-        DispatchQueue.main.async {
-            InstagramAPI().fetchRecentMediaData(accessToken: self.accessToken, callback: { (medias: [InstagramAPI.Media]) -> Void in
-                self.medias = medias
-                self.tableView.reloadData()
+                    if let url = NSURL(string: self.profilePicture), let data = NSData(contentsOf: url as URL), let photo = UIImage(data: data as Data) {
+                        self.userImage.image = photo
+                    } else {
+                        self.userImage.image = UIImage(named: "feed.png")
+                    }
             })
+            
+            DispatchQueue.main.async {
+                InstagramAPI().fetchRecentMediaData(accessToken: self.accessToken, callback: { (medias: [InstagramAPI.Media]) -> Void in
+                    self.medias = medias
+                    self.tableView.reloadData()
+                })
+            }
         }
     }
     

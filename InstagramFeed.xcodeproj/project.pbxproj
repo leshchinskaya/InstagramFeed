@@ -29,6 +29,10 @@
 		CD9869942021F57700403E62 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9869922021F57700403E62 /* HeaderTableViewCell.xib */; };
 		CD9869962022001700403E62 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9869952022001700403E62 /* PhotoTableViewCell.swift */; };
 		CDBEFE242034E61D00CBD2B9 /* InstaTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBEFE232034E61D00CBD2B9 /* InstaTabController.swift */; };
+		CDD350042038847A003958D8 /* IFModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDD350022038847A003958D8 /* IFModel.xcdatamodeld */; };
+		CDD3500720388520003958D8 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD3500520388520003958D8 /* Explore.swift */; };
+		CDD3500820388520003958D8 /* Explore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD3500620388520003958D8 /* Explore+CoreDataProperties.swift */; };
+		CDD3500A203885F1003958D8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD35009203885F1003958D8 /* CoreDataManager.swift */; };
 		CDEE2E7D2023B3A900E534F8 /* InstagramData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE2E7C2023B3A900E534F8 /* InstagramData.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +64,10 @@
 		CD9869922021F57700403E62 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		CD9869952022001700403E62 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		CDBEFE232034E61D00CBD2B9 /* InstaTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaTabController.swift; sourceTree = "<group>"; };
+		CDD350032038847A003958D8 /* IFModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IFModel.xcdatamodel; sourceTree = "<group>"; };
+		CDD3500520388520003958D8 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Explore.swift; path = /Users/mariya/InstagramFeed2/InstagramFeed/Model/Explore.swift; sourceTree = "<absolute>"; };
+		CDD3500620388520003958D8 /* Explore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Explore+CoreDataProperties.swift"; path = "/Users/mariya/InstagramFeed2/InstagramFeed/Model/Explore+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		CDD35009203885F1003958D8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		CDEE2E7C2023B3A900E534F8 /* InstagramData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,8 +86,12 @@
 		CD2D812B202762E300806884 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CDD3500520388520003958D8 /* Explore.swift */,
+				CDD3500620388520003958D8 /* Explore+CoreDataProperties.swift */,
 				CDEE2E7C2023B3A900E534F8 /* InstagramData.swift */,
 				CD2D812C2027630400806884 /* InstagramAPI.swift */,
+				CDD350022038847A003958D8 /* IFModel.xcdatamodeld */,
+				CDD35009203885F1003958D8 /* CoreDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,14 +381,18 @@
 				CD550E482023164400BCC429 /* Constant.swift in Sources */,
 				CD2D81262027356500806884 /* DetailPhotoViewController.swift in Sources */,
 				CD2D812D2027630400806884 /* InstagramAPI.swift in Sources */,
+				CDD3500A203885F1003958D8 /* CoreDataManager.swift in Sources */,
 				CD9869832020C36000403E62 /* ExploreCollectionViewController.swift in Sources */,
 				CDEE2E7D2023B3A900E534F8 /* InstagramData.swift in Sources */,
 				CD550E4A202316D500BCC429 /* InstagramLoginViewController.swift in Sources */,
+				CDD3500720388520003958D8 /* Explore.swift in Sources */,
+				CDD3500820388520003958D8 /* Explore+CoreDataProperties.swift in Sources */,
 				CD9869852020C38C00403E62 /* ExplorePhotoCollectionViewCell.swift in Sources */,
 				CDBEFE242034E61D00CBD2B9 /* InstaTabController.swift in Sources */,
 				CD98698E2021EF7900403E62 /* FeedTableViewController.swift in Sources */,
 				CD2D8128202739D500806884 /* PresentDetailTransition.swift in Sources */,
 				CD2D812A20273A2E00806884 /* DismissDetailTransition.swift in Sources */,
+				CDD350042038847A003958D8 /* IFModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +581,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDD350022038847A003958D8 /* IFModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDD350032038847A003958D8 /* IFModel.xcdatamodel */,
+			);
+			currentVersion = CDD350032038847A003958D8 /* IFModel.xcdatamodel */;
+			path = IFModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD9869642020BC1300403E62 /* Project object */;
 }
