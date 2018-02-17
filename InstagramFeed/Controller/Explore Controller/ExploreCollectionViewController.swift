@@ -50,7 +50,6 @@ class ExploreCollectionViewController: UICollectionViewController {
     
     // MARK: - Helper Methods
 
-    //https://api.instagram.com/v1/tags/{tag-name}/media/recent?access_token=ACCESS-TOKEN
     func urlWithSearchText(searchText: String) -> URL {
         let escaptedSearchText = searchText.replacingOccurrences(of: " ", with: "")
         let urlSring = "https://api.instagram.com/v1/tags/\(searchText)/media/recent?access_token=\(accessToken)"

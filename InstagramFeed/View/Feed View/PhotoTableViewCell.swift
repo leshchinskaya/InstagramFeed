@@ -10,6 +10,22 @@ import UIKit
 
 class PhotoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var likes: UILabel!
+    @IBOutlet weak var info: UILabel!
+    
+    var media: InstagramAPI.Media? {
+        didSet {
+            if let setMedia = media {
+                info.text = setMedia.caption
+                likes.text = "😍 " + String(setMedia.likes) + " likes"
+                if let url = NSURL(string: setMedia.takenPhoto) {
+                    photo.setImageWith(url as URL)
+                }
+            }
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

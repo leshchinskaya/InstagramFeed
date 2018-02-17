@@ -37,8 +37,8 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vB3-DV-9tM">
                                 <rect key="frame" x="177" y="80" width="20" height="20"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="success" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUG-Va-zy4">
-                                <rect key="frame" x="296.5" y="80" width="62.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="success?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUG-Va-zy4">
+                                <rect key="frame" x="288" y="80" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -160,7 +160,7 @@
         <!--Feed Table View Controller-->
         <scene sceneID="ZUg-QQ-kHD">
             <objects>
-                <tableViewController id="VEF-Fx-th2" customClass="FeedTableViewController" customModule="InstagramFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Feed" id="VEF-Fx-th2" customClass="FeedTableViewController" customModule="InstagramFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0WE-vV-FFY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,6 +258,11 @@
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8iW-Cp-hrM" secondAttribute="trailing" constant="20" symbolic="YES" id="vjF-5f-dub"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="headPic" destination="Gbf-xG-wqO" id="Yla-KS-mPg"/>
+                                    <outlet property="headTime" destination="Ct1-39-qMN" id="XcT-sS-rCm"/>
+                                    <outlet property="headUserName" destination="8iW-Cp-hrM" id="N2G-qW-4Lb"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="450" id="jEU-En-MMe" customClass="PhotoTableViewCell" customModule="InstagramFeed" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="158" width="375" height="450"/>
@@ -300,28 +305,11 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="Sll-RX-Bf3" secondAttribute="bottom" id="keM-Hd-DaM"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommetCell" id="s0a-G5-HLM" customClass="CommentTableViewCell" customModule="InstagramFeed" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="608" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s0a-G5-HLM" id="AN4-kF-5vm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6By-NG-vwr">
-                                            <rect key="frame" x="8" y="0.0" width="359" height="43.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="6By-NG-vwr" firstAttribute="top" secondItem="AN4-kF-5vm" secondAttribute="top" id="ASE-Mz-yef"/>
-                                        <constraint firstAttribute="trailing" secondItem="6By-NG-vwr" secondAttribute="trailing" constant="8" id="JPk-2W-IoD"/>
-                                        <constraint firstItem="6By-NG-vwr" firstAttribute="leading" secondItem="AN4-kF-5vm" secondAttribute="leading" constant="8" id="ita-SD-hBW"/>
-                                        <constraint firstAttribute="bottom" secondItem="6By-NG-vwr" secondAttribute="bottom" id="zws-Ru-80E"/>
-                                    </constraints>
-                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="info" destination="98m-02-sDT" id="inh-6o-Dsx"/>
+                                    <outlet property="likes" destination="aqS-ZH-LGI" id="aJ0-zq-GFn"/>
+                                    <outlet property="photo" destination="9cn-gh-DZ5" id="nMe-Wt-H0D"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -330,9 +318,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="XD2-2k-bLo"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
+                        <outlet property="profileView" destination="C4k-u9-C58" id="O2B-of-12c"/>
+                        <outlet property="userFollowers" destination="wjG-KX-ZNS" id="YKE-ea-BUu"/>
                         <outlet property="userFollowing" destination="RAw-NF-ngc" id="oAJ-l9-D2O"/>
+                        <outlet property="userImage" destination="hzt-hz-eI8" id="pc4-VN-TmP"/>
+                        <outlet property="userPosts" destination="pl6-Vf-D70" id="GD9-kT-m42"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaa-qW-y4r" userLabel="First Responder" sceneMemberID="firstResponder"/>

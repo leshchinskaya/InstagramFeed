@@ -63,6 +63,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headPic" destination="x9v-dG-pob" id="k31-Kz-qOA"/>
+                <outlet property="headTime" destination="iMK-r0-yHs" id="1cJ-Cn-Slq"/>
+                <outlet property="headUserName" destination="H4s-9n-ACS" id="H6H-Bg-GBX"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
