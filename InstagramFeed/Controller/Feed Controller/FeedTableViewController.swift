@@ -16,6 +16,8 @@ class FeedTableViewController: UITableViewController {
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var profileView: UIView!
     
+    //var refreshControl: UIRefreshControl!
+    
     var medias: [InstagramAPI.Media] = []
     var accessToken: String = ""
 
@@ -40,7 +42,7 @@ class FeedTableViewController: UITableViewController {
         }
     }
     
-    func updateData() {
+    @objc func updateData() {
         DispatchQueue.global(qos: .userInitiated).async {
             InstagramAPI().fetchUserData(accessToken: self.accessToken, callback: { userProfile in
                     self.userFollowers.text = "Followers: " + String(userProfile.followers)
@@ -68,6 +70,12 @@ class FeedTableViewController: UITableViewController {
         }
     }
     
+    @objc func update(refreshControl: UIRefreshControl) {
+        updateData()
+        tableView.reloadData()
+        self.refreshControl!.endRefreshing()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -89,12 +97,12 @@ class FeedTableViewController: UITableViewController {
         updateUserInfo()
     
         self.refreshControl = UIRefreshControl()
-        self.refreshControl!.addTarget(self, action: Selector("updateData"), for: UIControlEvents.valueChanged)
+        self.refreshControl!.addTarget(self, action: #selector(update), for: UIControlEvents.valueChanged)
         self.tableView!.addSubview(refreshControl!)
-        
+ 
         updateData()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
